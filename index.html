@@ -2,41 +2,120 @@
 <html lang="en">
 
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luna & Dytto</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&display=swap">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
   </head>
 
   <body>
-    <nav class="bg-gray-900">
-        <div class="flex justify-center py-18">
-            <img src="IMAGES/cat-pixel-art-white-dark-andrea-transparent.jpeg" width="30" height="30" alt="">
-            <a href="#Home" class="text-white py-8 px-16 no-underline">Home</a>
-            <a href="#Luna" class="text-white py-8 px-16 no-underline">Luna</a>
-            <a href="#Dytto" class="text-white py-8 px-16 no-underline">Dytto</a>
-            <a href="#Gallary" class="text-white py-8 px-16 no-underline">Gallary</a>
-            <a href="#Contact" class="text-white py-8 px-16 no-underline">Contact</a>
+        <nav>
+          <a href="index.html"></a> 
+          <img src="IMAGES/cat-pixel-art-white-dark-andrea-transparent.jpeg" alt="">
+          <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-rectangle-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li> <a href="#Home">Home</a></li>
+                <li><a href="#Luna">Luna</a></li>
+                <li><a href="#Dytto">Dytto</a></li>
+                <li><a href="#Gallary">Gallary</a></li>
+                <li> <a href="#Contact">Contact</a></li>
+            </ul>
         </div>
-    </nav>
+        <i class="fa-solid fa-bars"onclick="showMenu()"></i>
+        </nav>
     
-    <section id="intro" class="bg-gray-900 text-center py-18 text-white">
-        <img src="IMAGES/IMG_20211021_152819_edit_56915236808502.jpg" alt="" class="w-full bg-image">
+    <section id="intro" class="intro-box">
+        <img src="IMAGES/IMG_20211021_152819_edit_56915236808502.jpg" alt="">
         <div>
             <h1>Luna & Dytto</h1>
             <p>Hello, we are Luna & Dytto - the sweetiest cats in the world. What do you think?</p>
-            <button type="button" class="button button1">
-                <a href="#Luna" class="no-underline">Meet Luna</a>
-            </button>
-            <button type="button" class="button button2">
-                <a href="#Dytto" class="no-underline">Meet Dytto</a>
-            </button>
+            <a href="#Luna" class="button">Meet Luna</a>
+            <a href="#Dytto" class="button">Meet Dytto</a>
         </div>
     </section>
-    <main>
 
+    <!--------Main---------->
+
+    <main>
+        <section class="details">
+            <h1>Luna</h1>
+            <img class="profile-img" src="IMAGES/luna icon.png" alt="">
+            
+            <div class="row">
+                <div class="details-col">
+                    <h2><i class="fa-thin fa-cat"></i>Bio</h2>
+                    <ul class="small-lists">
+                        <li>Breed: British Shorthair (Gold)</li>
+                        <li>Birthday:07/01/2020</li>
+                        <li>Weight:3.4kg</li>
+                        <li>Personality: A little princess</li>
+                    </ul>
+                </div>
+                <div class="details-col">
+                    <h2><i class="fa-thin fa-cat"></i>Skills</h2>
+                    <ul class="small-lists">
+                        <li>Manage other cats</li>
+                        <li>Attract human-beings to love me</li>
+                        <li>Trick for treats whenever I want</li>
+                        <li>Trace/kill bugs</li>
+                    </ul>
+                </div>
+            <div>
+        </section>
+            
+        <section class="details">
+                <h1 >Dytto</h1>
+                <img class="profile-img" src="IMAGES/dytto icon.png" alt="">
+
+                <div class="row">
+                    <div class="details-col">
+                        <h2><i class="fa-thin fa-cat"></i>Bio</h2>
+                        <ul class="small-lists">
+                            <li>Breed: Ragdoll (Chocolate bi-color)</li>
+                            <li>Birthday:26/11/2020</li>
+                            <li>Weight:6.0kg</li>
+                            <li>Personality: A great snuggler!</li>
+                        </ul>
+                    </div>
+                    <div class="details-col">
+                        <h2><i class="fa-thin fa-cat"></i>Skills</h2>
+                        <ul class="small-lists">
+                            <li>Follow my big sister Luna</li>
+                            <li>Sleep 23 hours a day</li>
+                            <li>Eat up my food</li>
+                            <li>Exposing my tummy to the ones I love</li>
+                        </ul>
+                    </div>
+                <div>
+        </section>
+
+        <section>
+            <h1>Gallary</h1>
+            <div class="container"></div>
+        </section>
     </main>
+
     <footer>
+        <section class="footer">
+            <div class="icon">
+                <i class="fa fa-github"></i>
+            </div>
+
+        </section>
 
     </footer>
   </body>
+
+   <!----JavaScript for Toggle Menu-->
+   <script>
+      var navLinks = document.getElementById(navLinks)
+      function showMenu(){
+        navLinks.style.right = "0";
+      function hideMenu(){
+        navLinks.style.right = "-200px";
+    </script>
+
 </html>
