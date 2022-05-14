@@ -4,6 +4,10 @@
     font-family: 'Lato', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
  nav {
      display: flex;
      padding: 2% 6%;
@@ -59,8 +63,8 @@
 .intro-box img {
     width: 100%;
     position: relative;
-    width: 800px;
-    height: 400px;
+    width: 400px;
+    height: 260px;
     border: 5px solid white;
     border-radius: 100%;
     vertical-align: middle;
@@ -98,6 +102,9 @@
 }
 
 @media (max-width: 700px) {
+    .nav-i {
+        color: white;
+    }
     .intro-box h1 {
         font-size: 20px;
     }
@@ -107,10 +114,9 @@
     .nav-links {
         position: absolute;
         background: black;
-        height: 100vh;
         width: 200px;
         top: 0;
-        right: -200;
+        right: -200px;
         text-align: left;
         z-index: 2;
         transition: 1s;
@@ -148,15 +154,17 @@
     .row {
         margin-top: 5%;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
     }
 
     .small-lists {
         text-align: left;
         font-size: 22px;
+        margin-top: 10px;
     }
 
     .details-col {
+        margin: 20px;
         flex-basis: 38%;
         background: rgb(216, 174, 221);
         border-radius: 10px;
@@ -165,29 +173,61 @@
         position: relative;
     }
 
-    .fa {
-        display: inline-block;
-        font: normal normal normal 14px/1 FontAwesome;
-        font-size: inherit;
-        text-rendering: auto;
-        -webkit-font-smoothing: antialiased;
-        }
-
-    .footer {
-        background: black;
-        margin: 20px;
+    .details-col i {
+        margin-right: 5px;
     }
-
-    .icon.fa {
-        text-align: center;
-        cursor: pointer;
-    }
-
 
 .container {
+    margin: 30px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 650px;
+    height: 450px;   
+}
+
+.swiper {
+    width: 80%;
+    height: fit-content;
+}
+
+.swiper-slide img {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+}
+
+.swiper .swiper-button-prev, .swiper .swiper-button-next {
+    color: #fff;
+}
+
+.swiper .swiper-pagination-bullet-active {
+    background: #fff;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    }
+
+.footer {
+    background: black;
+    height: 80px;
+    text-align: center;
+}
+
+.icon {
+    margin: 0 13px;
+    padding:18px 0;
+    cursor: pointer;
+}
+
+.footer p {
+    color: white;
+    text-align: center;
 }
