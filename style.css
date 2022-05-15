@@ -186,8 +186,8 @@ html {
 }
 
 img {
-    width: 650px;
-    height: 450px;   
+    width: 630px;
+    height: 430px;   
 }
 
 .swiper {
@@ -230,4 +230,98 @@ img {
 .footer p {
     color: white;
     text-align: center;
+}
+
+.cat1 img {
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+    -webkit-animation: cat1 6s infinite alternate
+}
+
+.cat1 :hover {
+    animation-play-state: paused;
+}
+
+@keyframes cat1 {
+    0% {
+        transform: translateX(0%);
+    }
+
+    10% {
+        transform: translateX(50%) translateY(100%)
+    }
+
+    20% {
+        transform: translateX(0%) translateY(200%)
+    }
+
+    30% {
+        transform: translateX(50%) translateY(300%)
+    }
+
+    40% {
+        transform: translateX(0%) translateY(400%)
+    }
+
+    50% {
+        transform: translateX(50%) translateY(500%);
+    }
+
+    60% {
+        transform: translateX(0%) translateY(600%);
+    }
+
+    70% {
+        transform: translateX(50%) translateY(700%);
+    }
+
+    80% {
+        transform: translateX(0%) translateY(800%);
+    }
+
+    90% {
+        transform: translateX(50%) translateY(900%);
+    }
+
+    10% {
+        transform: translateX(0%) translateY(900%);
+    }
+}
+
+.cat2 img {
+    width: 150px;
+    height: 300px;
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+    -webkit-animation: cat2 6s infinite alternate
+}
+
+@keyframes cat2 {
+    0% {
+        transform: translateX(700%) translateY(0%);
+    }
+
+    20% {
+        transform: translateX(650%) translateY(50%)
+    }
+
+    40% {
+        transform: translateX(700%) translateY(100%)
+    }
+
+    60% {
+        transform: translateX(650%) translateY(150%)
+    }
+
+    80% {
+        transform: translateX(700%) translateY(200%)
+    }
+
+    100% {
+        transform: translateX(650%) translateY(250%);
+    }
 }
