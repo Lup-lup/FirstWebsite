@@ -247,7 +247,7 @@ img {
 
 @keyframes cat1 {
     0% {
-        transform: translateX(0%);
+        transform: translateX(0%) translateY(0%);
     }
 
     10% {
@@ -302,26 +302,26 @@ img {
 
 @keyframes cat2 {
     0% {
-        transform: translateX(700%) translateY(0%);
+        transform: translateX(900%) translateY(0%);
     }
 
     20% {
-        transform: translateX(650%) translateY(50%)
+        transform: translateX(850%) translateY(50%)
     }
 
     40% {
-        transform: translateX(700%) translateY(100%)
+        transform: translateX(900%) translateY(100%)
     }
 
     60% {
-        transform: translateX(650%) translateY(150%)
+        transform: translateX(850%) translateY(150%)
     }
 
     80% {
-        transform: translateX(700%) translateY(200%)
+        transform: translateX(900%) translateY(200%)
     }
 
     100% {
-        transform: translateX(650%) translateY(250%);
+        transform: translateX(850%) translateY(250%);
     }
 }
